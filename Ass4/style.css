@@ -1,0 +1,369 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+    width: 50%;
+     display: flex;
+    justify-content: space-evenly;
+    
+}
+ul li{
+    margin-block: 5px;
+}
+nav{
+    border: 2px solid black;
+    background-color: black;
+    height: 60px;
+     display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    width: 100vw;
+    transition: 2s;
+    
+}
+.tag{
+    font-size: 30px;
+} 
+
+nav a:hover{
+    color: burlywood;
+    transform: scaleZ(1.1);
+    text-decoration: underline;
+}
+
+nav button{
+    width: 15vw;
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: darkgrey;
+    border: none
+}
+nav button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(36, 35, 35);
+}
+
+#animation{
+    height: 100vh;
+    width: 95vw;
+    border-radius: 20px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slider 30s infinite linear;
+
+}
+#animation{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+@keyframes slider{
+    0%{
+       background-image: url('https://media.nationalgeographic.org/assets/photos/112/133/086f9ee9-4b97-4ba3-929d-ab0733af4a0e.jpg')
+    }
+    25%{
+        background-image: url('https://spca.bc.ca/wp-content/uploads/hummingbird-in-wild-flying-over-flowers-credit-Mary-Kay-Koon-825x551.jpg');
+    }
+    50%{
+        background-image: url('https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/fawn-deer-283005.jpg?h=c635b3df&itok=8erzhRQY');
+    }
+    75%{
+        background-image: url('https://emozzy.com/wp-content/uploads/2020/08/Webp.net-compress-image-1-1.jpg')
+    }
+    100%{
+        background-image: url('https://www.worldphoto.org/sites/default/files/200054_215715_0_%20%C2%A9%20Geert%20Weggen%2C%20Sweden%2C%20Commended%2C%20Open%20Competition%2C%20Wildlife%2C%202017%20Sony%20World%20Photography%20Awards.jpg');
+    }
+}
+
+
+#together{
+    border: 2px solid black;
+    width: 100vw;
+    height: 400px;
+    text-align: center;
+    padding: 8px;
+    background-color: #caf0f8;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+#together h2{
+    font-size: 50px;
+    margin-top: 70px;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 0.1em;
+}
+
+#together h3{
+    font-size: 35px;
+    font-weight: lighter;
+    font-family: 'Patrick Hand', cursive;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+#together h4{
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Akaya Kanadaka', cursive;
+    padding: 30px;
+    color: rgb(230, 140, 88);
+    
+}
+#together h4 span{
+    background-color: white;
+    width: 60px;
+}
+
+.box {
+    text-align: center;
+    /* border: 2px solid lightgreen; */
+    margin: 100px auto;
+    height: 170px;
+    padding: 10px;
+    /* background-color: rgb(233, 100, 245); */
+}
+.hey{
+    padding: 10px;
+
+}
+#learn{
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.1em;
+    font-size: 50px;
+    color: #caf0f8;
+}
+#end{
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    color: greenyellow;
+    letter-spacing: 0.05em;
+}
+#container{
+    width: 75vw;
+    margin: 50px auto;
+     /* border: 2px solid red;  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+section div{
+    width: 400px;
+    padding: 40px;
+    position: relative;
+    transition: 300ms;
+    display: flex;
+
+}
+section div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: 1px solid white;
+
+}
+section div:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    filter: grayscale(40%);
+    transform: scale(1.1);
+}
+section h3{
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: scale(0);
+    transition: 1s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+section p{
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 10%; 
+    transform: scale(0);
+    transition: 1s;
+    padding: 20px;
+}
+section div:hover p{
+    transform: scale(1);
+    color: white;
+}
+section div:hover h3{
+    text-transform: uppercase;
+    transform: scale(1);
+    color: rgb(24, 250, 73);
+}
+@media screen and (max-width:1080px) {
+    .tag{
+        font-size: 25px;
+        padding: 25px;
+    }
+}
+ @media screen and (max-width:890px) {
+    .tag{
+        font-size: 20px;
+        padding: 20px;
+        top: 40px;
+    }
+
+}
+@media screen and (max-width:740px) {
+    .tag{
+        font-size: 17px;
+        padding: 15px;
+        top: 30px;
+    }
+}  
+@media screen and (max-width:550px) {
+    .tag{
+        font-size: 14px;
+    }
+}  
+
+@media screen and (max-width:1200px){
+    section div{
+        width: 300px;
+    }
+    .items a{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:995px){
+    #together h2{
+        font-size:35px;
+    }
+    #together h3{
+        font-size: 30px;
+    }
+    #together h4{
+        font-size: 25px;
+    }
+    #together{
+        height: auto;
+        width: 100vw;
+    }
+    section div:hover h3{
+        font-size: 30px;
+    }
+    section div:hover p{
+        font-size: 20px;
+    }
+    section div{
+        width: 230px;
+    }
+    .items a{
+        font-size: 35px;
+    }
+    .act h1{
+        font-size: 30px;
+    } 
+    nav button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:690px){
+    #learn{
+        font-size: 35px;
+    }
+    #end{
+        font-size: 50px;
+    }
+    section div:hover h3{
+        font-size: 25px;
+    }
+    section div:hover p{
+        font-size: 15px;
+    }
+    .items a{
+        font-size: 30px;
+    }
+    .act h1{
+        font-size: 20px;
+    }
+    nav button{
+        font-size: 10px;
+    }
+
+}
+#big{
+    border: 2px solid white;
+    width: 95vw;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #414833;
+}
+.act{
+    width: 95vw;
+    height: 600px;
+    background-image: url('https://images.unsplash.com/photo-1549480017-d76466a4b7e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+    background-repeat: no-repeat;
+    background-size: 95% 600px; 
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+.act h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: 0.5rem solid;
+    padding: 10px;
+    transition: 200ms;
+}
+.act h1:hover{
+    transform: scaleY(1.1);
+    cursor: pointer;
+    text-shadow: 2px 2px 3px gray;
+    box-shadow: 2px 2px 3px skyblue;
+}
+footer{
+    display:grid;
+    place-items:center;
+    background-color: black;
+} 
+footer ul{
+     list-style: none;
+    width: 300px;
+    font-size: 50px;
+    color: #6cccc6;
+    padding: 20px;
+}
+ul li i{
+    font-size: 50px;
+    color: #33d3c8;
+    padding: 10px; 
+    margin: auto;
+    transition: 200ms;
+
+}
+ul li i:hover{
+    transform: scaleY(1.3);
+    transform: scaleX(1.1);
+}
+
+
+
