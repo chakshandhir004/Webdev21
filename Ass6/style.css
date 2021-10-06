@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: #8ecae6; */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    }
+
+
+h1{
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    padding-top: 20px;
+    color: #283618;
+    text-shadow: 2px 2px 2px white;
+    font-size: 50px;
+
+}
+
+#wrapper{
+    height: 400px;
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;    padding: 25px;
+    border: none;
+}
+#inp{
+    height: 40px;
+    width: 300px;
+    border: 2px solid gray;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 2px 0;
+    box-shadow: 2px 2px 2px gray;
+    margin-bottom: 10px;
+    outline: none;
+
+}
+#btn{
+    height: 38px;
+    width: 40px;
+    box-shadow: 2px 2px 2px gray;
+    border: none;
+    border-radius: 5px;
+    background: purple;
+    font-size: 20px;
+}
+#list{
+    max-height: 250px;
+    overflow-y: auto;
+}
+#list li{
+    list-style-type: none;
+    height: 45px;
+    letter-spacing: 0.1rem;
+    overflow: hidden; 
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.8rem;
+    color: purple;
+    margin: 1px auto;
+    padding-left: 10px;
+
+}
+.todo{
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    background-color: #ccc;
+    height: 50px;
+}
+
+.todo li{
+    flex: 1;
+    /* margin: 20px; */
+    padding-top: 3px; 
+    margin: 2px auto;
+    padding-left: 2px;
+}
+
+.todo-btn{
+    color: orangered;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    height: 45px;
+    background: #ccc;
+    border: none;
+   margin: 1px auto;
+
+}
+/* #list span{
+    position: absolute;
+    right: -45px;
+    color: tomato;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+#list li:hover span{
+    right: 0px;
+} */
